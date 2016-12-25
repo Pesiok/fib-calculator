@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  position: relative;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;  
+}
+body:after
+{
+    content:'';
+    display: block;
+    height: 3.5rem;
+}
+
+.header {
+    margin: 0 auto;
+    color: #111111;
+    height: 27em;
+    transition: height 0.3s ease-in-out;
+    text-align: center;
+    border-bottom: 0.2em solid #8C6800;
+    background: url(../img/sunflowers.jpg) no-repeat 15% 50%;
+    background-size: cover;
+}
+
+ 
+.header h1 {
+    font-family: 'Pacifico', cursive, Georgia;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3.7rem;
+    letter-spacing: 0.4rem;
+    padding-top: 2.7em;
+    
+}
+.content {
+    margin: 0 auto;
+    width: 95%;
+}
+.article {
+    margin: 2em 0 2em 0;
+}
+.article .article-heading {
+    text-align: center;
+    color: #8C6800;
+    text-shadow: 1px 1px 2px #111111;
+    font-size: 2rem;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+.article p {
+    margin-bottom: 0.5em;
+    line-height: 1.2em; 
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #8C6800;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    padding: 1em;
+    border-bottom: 0.1em solid #ECB300;
+}
+.footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer a:hover {
+    color: #111111;
+}
+/* to be implemented.. 
+
+.output-anim {
+   
+}
+
+
+@keyframes output-color-animation{
+    
+    0% {
+        
+    }
+    50% {
+        background-color: #8C6800;
+        color: #FFFFFF;
+    }
+    100% {
+        
+    } 
+}
+*/
+
+.calc-div {
+    margin: 0 auto;
+    margin: 1em 0 0.5em 0;
+    text-align: center;
+}
+.calc-div button {
+  background: none;
+  margin-top: 2em;
+  border: solid 0.15em #8C6800;
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+.calc-div input:focus,
+.calc-div input:active {
+  outline: none;
+}
+.calc-div input[type="number"] {
+  border: none;
+  border-bottom: solid 0.17em #8C6800;
+}
+.calc-div button:active {
+  color: #FFFFFF;
+  background-color: #8C6800;
+}
+.calc-div .input-group {
+  display: inline-block;
+  margin-right: 0.5em;
+  position: relative;
+  color: #EEBA25;
+}
+.calc-div .input-group label {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color: #8C6800;
+  text-shadow: 1px 1px 2px #111111;
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  pointer-events: none;
+  transition: all 0.15s ease-out 0s;
+  
+}
+.calc-div .input-group button {
+
+  padding: 0.5em 0em;
+}
+/* When focused on the input, select the next label in the DOM*/
+.calc-div .input-group input:focus + label,
+.calc-div .input-group input.has-value + label {
+  top: -1.5em;
+  font-size: 1.2rem;
+}
+.calc-div output {
+    display: block;
+    margin: 1em 0 1em 0;
+    padding: 1em;
+    border: 0.15em solid #8C6800;
+    height: 10em;
+}
+@media all and (min-width: 639px) {
+    .header {
+        height: 20em;
+    }
+    .header h1 {
+    font-size: 4.2rem;
+    }
+    
+}
+@media all and (min-width: 890px) {
+    .content {
+        display: flex;
+        justify-content: space-between
+    }
+   .article{
+        width: 47%;
+    }
+    .header h1 {
+    font-size: 4.2rem;
+    }
+    
+}
+@media all and (min-width: 1300px) {
+    .header {
+        height: 22em;
+    }
+    .header h1 {
+    font-size: 4.7rem;
+    }
+    
+}
+@media all and (min-width: 1800px) {
+    .body {
+        font-size: 2rem;
+    }
+    .header {
+        height: 42em;
+    }
+    .content {
+        width: 55%;
+    }
+    .header h1 {
+    font-size: 6rem;
+    }
+}
+
+/***********************/

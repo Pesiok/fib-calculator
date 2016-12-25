@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#8C6800"/>
+		<meta name="msapplication-navbutton-color" content="#8C6800"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="#8C6800"/>
+		<title>Fibonacci Numbers Calculator</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CPacifico" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css"> 
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="header-fix">
+            <header class="header">
+                    <h1>Fibonacci Numbers</h1>
+            </header>
+        </div>
+        <main class="content">
+                <article class="article">
+                        <h2 class="article-heading">What are Fibonacci Numbers?</h2>
+                        <p>The Fibonacci numbers are named after Italian mathematician Leonardo of Pisa, known as Fibonacci. He introduced them to the Western World in his book Liber Abaci written in 1202. By definition in original book, the first two numbers in the Fibonacci sequence are 1 and 1. Following numbers are sum of the two previous. For example: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...</p>
+                        <p>Fibonacci numbers can be seen in many biological settings such a, branching of trees, arrangement of leaves, rows of seeds, spiral of shells etc. By dividing one fibonacci number by previous one, you can get a approximation of &Phi;, a golden ratio. For example: 144/89 = 1.6179775 The approximation gets better if you use bigger fibonacci numbers.</p>
+                        <h2 class="article-heading">Disclaimer...</h2>
+                        <p>Due to fact that numbers in JavaScript are stored as 64-bit floating point values (IEEE 754 Standard) the highest  number you can get is 1.7976931348623157e+308. That means Fibonacci numbers of indexes higher than 1476 will by default return infinity. </p>
+                </article>
+                <article class="article">
+                    <h2 class="article-heading">Calculator</h2>
+                    <div class="calc-div">
+                      <output id="result" class="result">Results will be shown here</output>
+                      <div class="input-group">
+                        <input type="number" id="input" required>
+                        <label for="input">Fibonacci number</label>
+                      </div>
+                      <button type="button" id="generate">Calculate</button>
+                    </div>
+                </article>
+        </main>
+        <footer class="footer">
+            <p>Coded by <a href="#">Grzegorz Bielski</a> &copy; 2016</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
