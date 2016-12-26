@@ -1,4 +1,4 @@
-/////////////////////// UI //////////////////////////////////
+///// UI
 function labelHolder() {
     var input = document.querySelector(".calc-div .input-group input");
   
@@ -10,7 +10,6 @@ function labelHolder() {
     }
   });
 }
-////////////////////// Calculator functions////////////////////
 function fib(n) {  
     //for every interation fibNr = pre + pre2
      function fibMemo(i, pre, pre2) {
@@ -49,7 +48,7 @@ function fibCalculator() {
         displayResults(number, prevNumber, input);
     }    
 }
-////////////////////////// Init ////////////////////////////
+///// Init
 var init = function() {
     var button = document.getElementById("generate");
     var input = document.getElementById("input")
