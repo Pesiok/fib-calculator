@@ -11,13 +11,11 @@ body {
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;  
 }
-body:after
-{
+body:after {
     content:'';
     display: block;
     height: 3.5rem;
 }
-
 .header {
     margin: 0 auto;
     color: #111111;
@@ -28,8 +26,6 @@ body:after
     background: url(../img/sunflowers.jpg) no-repeat 15% 50%;
     background-size: cover;
 }
-
- 
 .header h1 {
     font-family: 'Pacifico', cursive, Georgia;
     font-style: italic;
@@ -37,7 +33,6 @@ body:after
     font-size: 3.7rem;
     letter-spacing: 0.4rem;
     padding-top: 2.7em;
-    
 }
 .content {
     margin: 0 auto;
@@ -75,31 +70,11 @@ body:after
     text-decoration: none;
     color: #FFFFFF;
 }
-.footer a:hover {
-    color: #111111;
+.footer a:hover,
+.footer a:focus{
+    color: #ECB300;
+    outline-color: #ECB300;
 }
-/* to be implemented.. 
-
-.output-anim {
-   
-}
-
-
-@keyframes output-color-animation{
-    
-    0% {
-        
-    }
-    50% {
-        background-color: #8C6800;
-        color: #FFFFFF;
-    }
-    100% {
-        
-    } 
-}
-*/
-
 .calc-div {
     margin: 0 auto;
     margin: 1em 0 0.5em 0;
@@ -114,11 +89,10 @@ body:after
 }
 .calc-div input:focus,
 .calc-div input:active {
-  outline: none;
+  outline-color: #302400;
 }
 .calc-div input[type="number"] {
   border: none;
-  border-bottom: solid 0.17em #8C6800;
 }
 .calc-div button:active {
   color: #FFFFFF;
@@ -128,7 +102,6 @@ body:after
   display: inline-block;
   margin-right: 0.5em;
   position: relative;
-  color: #EEBA25;
 }
 .calc-div .input-group label {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -143,10 +116,8 @@ body:after
   left: 0px;
   pointer-events: none;
   transition: all 0.15s ease-out 0s;
-  
 }
 .calc-div .input-group button {
-
   padding: 0.5em 0em;
 }
 /* When focused on the input, select the next label in the DOM*/
@@ -161,6 +132,13 @@ body:after
     padding: 1em;
     border: 0.15em solid #8C6800;
     height: 10em;
+    background: linear-gradient(#FFFFFF, rgba(140, 104, 0, 0.15));
+}
+.calc-div output .result {
+    transition: all 5s linear;
+    font-weight: bold;
+    color: #8C6800;
+    text-shadow: 1px 1px 1px #111111;
 }
 @media all and (min-width: 639px) {
     .header {
@@ -169,12 +147,11 @@ body:after
     .header h1 {
     font-size: 4.2rem;
     }
-    
 }
 @media all and (min-width: 890px) {
     .content {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
     }
    .article{
         width: 47%;
@@ -182,7 +159,6 @@ body:after
     .header h1 {
     font-size: 4.2rem;
     }
-    
 }
 @media all and (min-width: 1300px) {
     .header {
@@ -191,7 +167,6 @@ body:after
     .header h1 {
     font-size: 4.7rem;
     }
-    
 }
 @media all and (min-width: 1800px) {
     .body {
