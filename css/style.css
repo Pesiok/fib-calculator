@@ -92,7 +92,9 @@ body:after {
   outline-color: #302400;
 }
 .calc-div input[type="number"] {
+  width: 15em;
   border: none;
+  border-bottom: solid 0.15em #8C6800; 
 }
 .calc-div button:active {
   color: #FFFFFF;
